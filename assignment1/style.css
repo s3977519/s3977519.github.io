@@ -1,0 +1,446 @@
+body {
+    background-image: url("images/home_background.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin: auto;
+    max-width: 1100px;
+    font-family: "Lexend Deca", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400px;
+    font-style: 1.1rem;
+  }
+
+  /* the font choices aimed to reflect the ink style drawings presented in the reviewed 
+  webpage to make the screenshots and the design of this review more cohesive*/
+
+  /* colour scheme was to be kept simple as the layout was more experiemental. 
+  A bold vibrant gradient green paired with black and white to create interest, 
+  aiming to add a sense of "fresh" within the minimalist schematic*/
+  
+  h3 {
+    padding-top: -10%;
+    font-family: "Mansalva", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.9em;
+    text-align: center;  
+    
+  }
+  
+  h1 {
+    position: static;
+    font-size: 5rem;
+    text-align: center;
+    font-family: "Rock Salt", cursive;
+    font-weight: 400;
+    font-style: normal;
+    padding: 8% 0% 0% 3%;
+
+
+  }
+  
+  nav {
+    font-size: large;
+    margin-bottom: 40px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    position: fixed;    
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 9999;
+    
+
+  }
+
+  .bullet{
+    padding: 5%;
+    font-size: 1.2rem;
+    line-height: 160%;
+    list-style-position: outside;
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+    min-height: 80px;
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; 
+    
+}
+
+a:link, a:visited{
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  color: rgb(226, 179, 255);
+  text-decoration: underline;
+}
+
+
+a:active{
+ color: blueviolet;
+}
+
+/* fix this hover colour, return colour */
+
+header{
+    margin-top: 300px;
+}
+
+h2{
+    font-family: "Mansalva", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    font-size: 3rem;
+    padding: 8% 0% 0% 0%;
+
+}
+
+video{
+    max-width: 1100px;
+    justify-content: center;
+
+}
+
+p {
+  font-size: 1.3rem;
+  line-height: 160%;
+
+}
+
+.title{
+  font-family: "Mansalva", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  padding: 2% 0% 8% 0%;
+}
+
+.introtext {
+  text-align: center;
+  padding: 8% 8% 10% 8%;
+}
+
+/* grid-layout, columns of 3, 35 rows, */
+/* wanted a more dynamic layout, and to implement the dynamic style portrayed 
+in the reviewed webpage to create interest and break up heavy chunks of text */
+/* did a the question and photograph pairing on photoshop, and saved the 
+layering of text and image into its column(s) as a single imgae to simplify the 
+coding process of layered elements */ 
+/* used padding to adjust the size and offset the positioning of the image*/
+
+
+#content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: repeat(35, minmax(200px, auto));
+  max-width: 1200px;
+  margin-top: 200px;
+}
+
+.section1 {
+  padding: 10%;
+  background-image: url(images/section\ background.jpg);
+  background-attachment: fixed;
+}
+
+.question1{
+  grid-column: 1/3;
+  grid-row: 1/2;
+  padding-bottom: 7%;
+
+}
+
+.text1 {
+  grid-column: 1/3;
+  grid-row: 2/3;
+  padding-left: 10%;
+  justify-self: end;
+}
+
+.text1b {
+  grid-column: 3/4;
+  grid-row: 3/4;
+  padding-top: 60%;
+  padding-bottom: 10%;
+}
+
+.question2{
+  grid-column: 1/4;
+  grid-row: 4/5;
+  padding: 10%;
+  justify-self: center;
+}
+
+.text2 {
+  grid-column: 1/3;
+  grid-row: 5/6;
+  padding-left: 30%;
+  padding-bottom: 22%;
+}
+
+
+.question3 {
+  grid-column: 1/4;
+  grid-row: 6/7;
+  padding: 15% 25% 8% 5%;
+  justify-self:start;
+}
+
+.text3 {
+  grid-column: 1/3;
+  grid-row: 7/8;
+  padding-left: 35%;
+}
+
+.question4 {
+  grid-column: 1/4;
+  grid-row: 8/9;
+  padding-right: 20%;
+  padding-top: 25%;
+}
+
+.text4 {
+grid-column: 3/4;
+grid-row: 9/10;
+
+}
+
+.question5 {
+  padding-top: 80%;
+  padding-left: 26%;
+  padding-right: 8%;
+  grid-column: 2/4;
+  grid-row: 10/11;
+}
+
+.text5 {
+  padding-top: 50%;
+  grid-column: 1/2;
+  grid-row: 10/11;
+}
+
+.question6 {
+  padding-top: 35%;
+  grid-row: 11/12;
+  grid-column: 1/4;
+}
+
+.text6 {
+  padding-top: 15%;
+  padding-left: 7%;
+  grid-row: 12/13;
+  grid-column: 1/3;
+}
+
+.question6b {
+  padding-top: 20%;
+  grid-row: 13/14;
+  grid-column: 2/4;
+}
+
+.text6b {
+  padding-top: 10%;
+  grid-row: 14/15;
+  grid-column: 2/4;
+}
+
+.question7 {
+  padding-top: 33%;
+  padding-left: 8%;
+  grid-column: 1/3;
+  grid-row: 15/16;
+}
+
+.text7a {
+  padding-top: 20%;
+  padding-left: 15%;
+  grid-column: 1/2;
+  grid-row: 16/17;
+
+}
+.text7b {
+  padding-top: 60%;
+  padding-left:15%;
+  grid-column: 2/3;
+  grid-row: 16/17;
+}
+
+.text7c {
+  padding-top: 70%;
+  grid-column: 3/4;
+  grid-row: 17/18;
+}
+
+.text7d {
+  padding-top: 30%;
+  padding-left: 10%;
+  grid-column: 1/3;
+  grid-row: 18/19;
+}
+
+.text7e {
+  padding-top: 25%;
+  padding-left:30%;
+  grid-column: 2/4;
+  grid-row: 19/20;
+}
+
+.text7f {
+  padding-top: 21%;
+  padding-left:10%;
+  grid-column: 1/2;
+  grid-row: 20/21;
+}
+
+.question8 {
+  padding-top: 30%;
+  grid-column: 1/4;
+  grid-row: 21/22;
+}
+
+.text8 {
+  padding-top: 19%;
+  padding-left: 15%;
+  padding-bottom: 55%;
+  grid-column: 1/3;
+  grid-row: 22/23;
+}
+
+.section2 {
+  padding: 10%;
+  grid-column: 1/4;
+  grid-row: 23/24;
+  background-image: url(images/section\ background.jpg);
+  background-attachment: fixed;
+
+}
+
+.question9 {
+grid-row: 24/25;
+grid-column:1/4;
+padding-top: 25%;
+padding-right: 25%;
+}
+
+.text9 {
+  padding-top: 25%;
+  padding-right: 14%;
+  grid-column:1/2;
+  grid-row: 25/26;
+}
+
+.text9b {
+  padding-top: 65%;
+  padding-left: 18%;
+  grid-column:2/3;
+  grid-row: 25/26;
+}
+
+
+.question10 {
+  padding-top: 45%;
+  padding-left: 22%;
+  grid-column: 2/4;
+  grid-row: 26/27;
+}
+
+.text10 {
+  padding-top: 98%;
+  grid-column: 1/2;
+  grid-row: 26/27;
+}
+
+.question11 {
+  padding-top: 35%;
+  padding-left: 8%;
+  padding-right: 12%;
+  grid-column: 1/4;
+  grid-row: 27/28;
+}
+
+.text11 {
+  padding-top: 28%;
+  padding-left: 8%;
+  padding-right: 15%;
+  grid-column: 1/3;
+  grid-row: 28/29;
+}
+
+.question12 {
+  padding-top: 18%;
+  grid-column: 1/4;
+  padding-left: 20%;
+  padding-right:8%;
+  grid-row: 30/31;
+}
+
+.text12 {
+  padding-top: 15%;
+  padding-left: 8%;
+  padding-right: 15%;
+  grid-column: 1/3;
+  grid-row: 31/32;
+}
+
+.text12b {
+  padding-top: 20%;
+  padding-left: 45%;
+  padding-right: 8%;
+  grid-column: 2/4;
+  grid-row: 32/33;
+}
+
+.question13 {
+  padding-top: 27%;
+  padding-left: 5%;
+  padding-right: 5%;
+  grid-column: 1/4;
+  grid-row: 33/34;
+}
+
+.text13 {
+  padding-top: 18%;
+  padding-left: 10%;
+  padding-right: 20%;
+  grid-column: 1/3;
+  grid-row: 34/35;
+}
+
+.conclusion{
+text-align: center;
+padding: 10% 0% 10% 0%;
+
+}
+
+video.full{
+  padding-top: -10%;
+  padding-left: 0.6%;
+  justify-content: center;
+  max-width: 1100px;
+}
+
+
+.button{
+  text-align: center;
+  font-size:large;
+  padding: 2.2% 0% 2.2% 0%;
+}
+
+footer {
+  background-image: url("images/footer2.jpg");
+  background-repeat: no-repeat;
+  background-position: fixed;
+  background-size:cover;
+  max-width: 1100px;
+}
+
