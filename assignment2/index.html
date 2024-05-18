@@ -17,40 +17,159 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HJBS</title>
-
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
 </head>
-<header>
-    <h1>HoneyJeans: Bananasleeves</h1>
-    <nav>
-        <ul>
-            <li>About Us</li>
-            <li>Albums</li>
-            <li>Music</li>
-            <li>Tours</li>
-            <li>Merch</li> 
-        </ul>
-    </nav>
-</header>
     
 <body>
-    <!-- display picture -->
 
-    <section>
+<!-- Conceptually, I intend for each navigation to lead to a separate page. 
+    However I will not be demonstrating the links to the separate pages within this website. -->
+
+<!-- An about us page to includes the artist/band's inspirations, background (where they are from, 
+    cultural social interests), story (how they formed) and social media. -->
+
+<!-- A whole page on the list of albums they have released, include the album cover image, name, description and release date.
+    To reveal more information (songlist, purchase options) upon click of individual album.  -->
+
+<!-- A page on the list of music released, media player as well. -->
+
+<!-- Showcasing upcoming tour dates and prior tours, pictures and publicity. -->
+
+<!-- Merchandise to sell within the webpage. -->
+
+    <header>
+        <h1>HoneyJeans X Buttersleeves</h1>
+        <nav>
+            <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Albums</a></li>
+            <li><a href="#">Music</a></li>
+            <li><a href="#">Tours</a></li>
+            <li><a href="#">Merch</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    
+
+        <!-- Introduction: Introducing the band -->
+
+    <section id="introduction">
         <article>
-        <h2>Latest Release</h2>
-        <video width=100% height="100%" controls>
-            <source src="movie.mp4" type="video/mp4">
-        </video>
-        <h3>Flower Reverie</h3>
-        <p>whispered melodies floating in space, the harmonies linger like a sweetdream, serenading the night in a tranquil stream.</p>
+        <!-- insert aesthetic photograph -->
+        <h2> Meringue Lemonade</h2>
+        <h3>Meet The Band</h3>
+        <h4>Jesslyn Cass, Brian Jakeston, Dixie Hamilton</h4>
+
+        <p>8 May 2001</p>
+
+        <!-- Dummytext written by me -->
+        <p> "Voices scream red, guitars strums green, I love the blues, slow dance with me. 
+            Sing in the rain, walk through the clouds, the sky is purple, come with me now.
+            All I can see, flashes before me, like diamonds in trees and apples on seas.
+            Pretty orange streams, meringue sugar cream, your lemon buttery eyes, whispers to me."</p>
+
+        <p> Hey, it's HoneyJeans X Buttersleeves! Inspired by the poetic contradictions of life, we started this band 
+            that loves all things indie, street jazz and bosa nova. We're your typical bunch of oddballs, fresh out of college, 
+            experimenting with music, and sharing a burning passion for food. Thank you for the continual love and support, 
+            hope you enjoy our latest album!
+        </p>
+
+        <!-- DROP DOWN BUTTON -->
+    
+    <button class="accordian">learn more</button>
+    <div class="panel">
+        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
+            ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
+            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in 
+            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+            non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+      </div>
+
+    <!-- I wanted to include a drop down section that keeps the introduction to the band concised. Keep a short snapshot of the essence of the band
+            while keeping to a minimal aesthetic giving viewers the option to dive deeper after being drawn in.  -->
+        
         </article>
     </section>
+    <main class="container">
+        <!-- Media Player Section -->
+        
+        <div class="media-player">
+<h2>Latest Release</h2>
+<video id="custom-video-player" controls>
+    <source src="Music Video_1.mp4" type="video/mp4">
+</video>
+<div class="custom-controls">
+    <button id="play-pause-btn" onclick="togglePlayPause()">
+      <img
+        id="play-pause-img"
+        src="https://img.icons8.com/ios-glyphs/30/play--v1.png"
+        alt="Play Button"
+        width="24"
+        height="24"
+      /></button>
+        <!-- add the missing buttons or functionality here -->
+    <div class="progress-bar">
+        <span id="progress-bar-fill"></span>
+      </div>
+    </div>
+    <h3>Flower Reverie</h3>
+<h4>Album : Daisy Love 2024</h4>
+<p>"whispered melodies floating in space, the harmonies linger like a sweetdream, serenading the night in a tranquil stream."
+</p>
+<p>
+    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
+    ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
+    laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in 
+    voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+    non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+</p>
+  </div>
+</main>
+
+<!-- Album Cover Gallery -->
+
+<section id="album gallery">
+<article>
+    <h2>Albums</h2>
+
+    <div class="gallery">
+        <div class="album-cover">
+            <img src="Album 1.jpg">
+            <h3>Blue Milkshake</h3>
+            <p>2023</p>
+
+        </div>
+
+        <div class="album-cover">
+            <img src="Album 2.jpg">
+            <h3>The Grass is Pink</h3>
+            <p>2023</p>
+
+        </div>
+
+        <div class="album-cover">
+            <img src="Album 3.jpg">
+            <h3>Tiny Cottage</h3>
+            <p>2022</p>
+
+        </div>
+
+    </div>
+
+</article>
+</section>
+
 
 </body>
 
 <footer>
-    CREDITS:
+    <p1>&copy; 2024 Media Player Website. All rights reserved.</p1>
+    <br>
     Music by <a href="https://pixabay.com/users/albert-paul-4203169/?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=207690">Albert-Paul</a> from <a href="https://pixabay.com/music//?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=207690">Pixabay</a>
     Video by <a href=" https://www.pexels.com/video/a-woman-dancing-happily-in-the-middle-of-the-field-of-flowers-3127074">Taryn Elliot</a>
 </footer>
+
 </html>

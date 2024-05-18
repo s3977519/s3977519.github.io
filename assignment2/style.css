@@ -1,2 +1,233 @@
+:root {
+    --primary-bg-color: #dedede;
+    --text-color: #1e712d;
+    --footer-text-color: #90c69a;
+    --main-bg-color: #073522;
+    --main-text-color: #dedede;
+    --main-btn-bg-color: #c2dabc;
+  }
+  
+  body,
+  h1,
+  p,
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+
+  /* Main styling */
+  body {
+    font-family: "Arial", sans-serif;
+    background-color: var(--primary-bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+
+  /* Container for Media Player */
+  .container {
+    width: 100%;
+    padding: 10px;
+     font-family: "Arial", sans-serif;
+    background-color: var(--primary-bg-color);
+    color: var(--main-text-color);
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  /* Header styling */
+  header {
+    background-color: var(--main-bg-color);
+    color: var(--main-text-color);
+    padding: 12% 0% 2% 8%;
+    width: 100%;
+  }
+
+  h1{
+    text-align: left;
+    font-size: 4rem;
+  }
+  
+  /* Navigation styling */
+  nav {
+    margin: 25px;
+    text-align: left;
+    padding: 0% 0% 0% 0%;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+  }
+  
+  nav ul li {
+    margin: 15px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: var(--main-bg-colortext-color);
+
+  }
+  
+  article {
+    margin-top: 130px;
+    margin-bottom: 100px;
+}
+
+  button.accordian {
+  margin-top: 2%;
+  margin-left: 75%;
+  padding: 1% 2%;
+  font-size: small;
+  background-color: #1e712d;
+  color: var(--main-btn-bg-color);
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+/* .accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+} */
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, button.accordian:hover {
+  background-color: #c2dabc;
+  color: #1e712d;
+
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  padding: 0 18px;
+  background-color: var(--primary-bg-color);
+  display: none;
+  overflow: hidden;
+    background-color: #9e2929;
+    color: var(--main-text-color);
+    font-size: 1rem;
+
+}
+
+  /* Media player styling */
+  .media-player {
+    width: 100%;
+    height: 1300px;
+    background-color: #073522;
+    padding: 5%;
+  }
+
+  h2 {
+ font-weight: 600;
+ font-size: 1.5rem;
+ padding: 0% 0% 2% 8%;
+  }
+
+ h3 {
+ font-weight: 600;
+ font-size: 1.1rem;
+ padding: 2% 0% 0% 8%;
+}
+ 
+h4 {
+    font-weight: 400;
+    font-style: italic;
+    font-size: 1rem;
+    padding: 0% 0% 2% 8%;
+   }
+
+ p {
+  
+ max-width: 1000px;
+ font-style: italic;
+ font-size: 0.8rem;
+ padding: 0% 8% 2% 8%;
+ text-align: left;
+}
+
+  .media-player video {
+    max-width: 100%;
+    padding: 0% 8% 2% 8%;
+  }
+  
+  .custom-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 10px;
+    width: 100%;
+    padding: 0% 8% 2% 8%;
+  }
+  
+  .custom-controls button {
+    background-color: var(--main-btn-bg-color);
+    color: var(--main-text-color);
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .progress-bar {
+    width: 100%;
+    height: 10px;
+    background-color: rgb(62, 94, 71);
+    margin-top: 10px;
+    overflow: hidden;
+  }
+  
+  .progress-bar span {
+    display: block;
+    height: 100%;
+    background-color: var(--main-bg-color);
+    width: 0;
+    transition: width 0.3s ease;
+  }
+
+  .gallery {
+  display: flex;
+  justify-content: center;
+  
+  }
+
+  .album-cover{
+    width: 450px;
+    padding: 0.4%;
+
+  }
+  /* Footer styling */
+  footer {
+    background-color: var(--main-bg-color);
+    color: var(--main-text-color);
+    text-align: center;
+    font-size: 0.8rem;
+    font-style: italic;
+    padding: 4%;
+    width: 100%;
+  }
+
+  footer a {
+    color: var(--footer-text-color);
+  }
 
   
