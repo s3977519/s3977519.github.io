@@ -4,14 +4,26 @@
 
 <!-- my concept for this assignment is an artist webpage, featuring the artist bio, music, albums and merchandise -->
 
-<!-- added attribute: I added an auto loop/play function to feature the latest songs as they enter the page, hooking the audience up with their latest tunes right off the bat-->
+<!-- added attribute: I added a repeat button and a fullscreen option to feature the music video of their latest release,
+    allowing the users to enjoy THE MUSIC VIDEO in a way that functions minimally similarly to YouTube. Also, making 
+    the progress bar interactive so that users can jump right to or replay their favourite parts. -->
+
+<!-- Since it is a music video afterall, the fullscreen button is necessary to enhance the experience of the production, choreography etc. -->
+<!-- Additionally, for a more enjoyable experience, a play on repeat button, allow users to browse other tabs while re-listening or re-watching a good song -->
+
 
 <!-- these are my references for the audio, video and images -->
 
 <!-- artist image: https://www.freepik.com/free-vector/hand-drawn-flat-profile-icon-collection_17657469.htm-->
 <!-- music video: Video by Taryn Elliot https://www.pexels.com/video/a-woman-dancing-happily-in-the-middle-of-the-field-of-flowers-3127074/-->
 <!-- music audio: Music by Albert-Paul from Pixabay https://pixabay.com/music/smooth-jazz-cool-jazz-reverie-207690/-->
-<!-- bio profile image:  -->
+<!-- images for album cover-designs:  
+    
+    Photo by Elizaveta Dushechkina: https://www.pexels.com/photo/woman-lying-on-grass-4385304/
+    Photo by Jessica Lewis 🦋 thepaintedsquare: https://www.pexels.com/photo/white-petaled-flowers-in-bloom-583850/
+    Photo by Irina Iriser: https://www.pexels.com/photo/brown-and-green-leafed-plants-1379640/
+    Photo by Irina Iriser: https://www.pexels.com/photo/tilt-shift-lens-photo-of-blue-flowers-673857/
+-->
 
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -52,44 +64,58 @@
         </nav>
     </header>
 
-    
+    <!-- Latest Tour -->
+    <img src="Meringue Lemonade2.jpg" width="100%">
 
-        <!-- Introduction: Introducing the band -->
+        <!-- Introduction: Introducing the band's latest tour -->
 
     <section id="introduction">
         <article>
-        <!-- insert aesthetic photograph -->
-        <h2> Meringue Lemonade</h2>
+        <h2>Meringue Lemonade Tour @Melbourne</h2>
         <h3>Meet The Band</h3>
         <h4>Jesslyn Cass, Brian Jakeston, Dixie Hamilton</h4>
 
-        <p>8 May 2001</p>
+        <p>8 June 2024</p>
 
         <!-- Dummytext written by me -->
+
+        <p> Hey, it's HoneyJeans X Buttersleeves! Inspired by the poetic contradictions of life, we celebrate out 
+            love for all things indie, street jazz and bosa nova in our latest album, "Blue Milkshake". Thank you for
+            your continual love and support, hope you'd enjoy it as much as we do. Cheers! 
+        </p>
+        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
+            ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
+            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in 
+            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+            non proident, sunt in culpa qui officia deserunt mollit anim id. Sed ut perspiciatis unde omnis 
+            iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa 
+            quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim 
+            ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores
+            eos qui ratione voluptatem sequi nesciunt." </p>
+
+        <!-- DROP-DOWN REVEAL MORE INFORMATION -->
+    
+    <button class="accordian">View Album</button>
+    <div class="panel">
+        <img src="Album 1.jpg" width="100%">
+        <br><br>
+        <h2>Blue Milkshake: 2024</h2>
+        
         <p> "Voices scream red, guitars strums green, I love the blues, slow dance with me. 
             Sing in the rain, walk through the clouds, the sky is purple, come with me now.
             All I can see, flashes before me, like diamonds in trees and apples on seas.
             Pretty orange streams, meringue sugar cream, your lemon buttery eyes, whispers to me."</p>
 
-        <p> Hey, it's HoneyJeans X Buttersleeves! Inspired by the poetic contradictions of life, we started this band 
-            that loves all things indie, street jazz and bosa nova. We're your typical bunch of oddballs, fresh out of college, 
-            experimenting with music, and sharing a burning passion for food. Thank you for the continual love and support, 
-            hope you enjoy our latest album!
+        <p> "Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, 
+            consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam 
+            aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit 
+            laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea 
+            voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
         </p>
-
-        <!-- DROP DOWN BUTTON -->
-    
-    <button class="accordian">learn more</button>
-    <div class="panel">
-        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
-            ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
-            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in 
-            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-            non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
       </div>
 
-    <!-- I wanted to include a drop down section that keeps the introduction to the band concised. Keep a short snapshot of the essence of the band
-            while keeping to a minimal aesthetic giving viewers the option to dive deeper after being drawn in.  -->
+    <!-- I wanted to include this drop down section to create a neat and concised look for the band. To showcase a snapshot of the event,
+            and keep to a minimal clean and easy to navigate visual design, only creating the option to dive deeper after being drawn in.  -->
         
         </article>
     </section>
@@ -97,24 +123,50 @@
         <!-- Media Player Section -->
         
         <div class="media-player">
+
 <h2>Latest Release</h2>
+
+<!-- Video -->
+
 <video id="custom-video-player" controls>
     <source src="Music Video_1.mp4" type="video/mp4">
 </video>
+
+<!-- Play Button -->
+
 <div class="custom-controls">
     <button id="play-pause-btn" onclick="togglePlayPause()">
       <img
         id="play-pause-img"
         src="https://img.icons8.com/ios-glyphs/30/play--v1.png"
         alt="Play Button"
-        width="24"
-        height="24"
+        height="auto"
       /></button>
-        <!-- add the missing buttons or functionality here -->
-    <div class="progress-bar">
-        <span id="progress-bar-fill"></span>
+      
+      <!-- This button was created just to check if the button was working, it is not meant to be published but part of my process -->
+      <!-- <button onclick="checkLoop()" type="button">status</button><br>  -->
+
+<!-- Progress Bar -->
+
+      <div class="progress-bar">
+        <span id="progress-bar-fill" value="0"></span>
       </div>
+
+<!-- Repeat Button -->
+
+        <button id="repeat-btn" onclick="enableLoop()">
+            <img id="repeat-img" src="https://img.icons8.com/ios-glyphs/30/repeat.png" height="auto">
+        </button>
+
+<!-- Fullscreen Button -->
+        
+        <button id="fullscreen-btn" onclick="openFullscreen();">
+        <img id="fullscreen" src="https://img.icons8.com/ios-glyphs/30/full-screen--v1.png" alt="full-screen--v1" height="auto"></button>
+
     </div>
+    
+<!-- Title, Caption, Description -->
+
     <h3>Flower Reverie</h3>
 <h4>Album : Daisy Love 2024</h4>
 <p>"whispered melodies floating in space, the harmonies linger like a sweetdream, serenading the night in a tranquil stream."

@@ -46,7 +46,7 @@
   header {
     background-color: var(--main-bg-color);
     color: var(--main-text-color);
-    padding: 12% 0% 2% 8%;
+    padding: 7.5% 0% 0% 8%;
     width: 100%;
   }
 
@@ -57,9 +57,8 @@
   
   /* Navigation styling */
   nav {
-    margin: 25px;
+    margin: 20px;
     text-align: left;
-    padding: 0% 0% 0% 0%;
   }
   
   nav ul {
@@ -77,62 +76,69 @@
 
   }
   
+/* Tour Information */
+
   article {
     margin-top: 130px;
     margin-bottom: 100px;
 }
 
+/* Drop-Down REVEAL Information */
+/* View Album Button */
+
   button.accordian {
-  margin-top: 2%;
-  margin-left: 75%;
+  margin-top: 5%;
+  margin-left: 78%;
   padding: 1% 2%;
   font-size: small;
   background-color: #1e712d;
-  color: var(--main-btn-bg-color);
+  color: var(--main-text-color);
   border: none;
   outline: none;
   cursor: pointer;
   transition: 0.4s;
 }
 
-/* .accordion {
-  background-color: #eee;
-  color: #444;
-  cursor: pointer;
-  padding: 18px;
-  width: 100%;
-  text-align: left;
-  border: none;
-  outline: none;
-  transition: 0.4s;
-} */
 
-/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
 .active, button.accordian:hover {
   background-color: #c2dabc;
   color: #1e712d;
-
+  
 }
 
-/* Style the accordion panel. Note: hidden by default */
-.panel {
-  padding: 0 18px;
+button.accordion:after {
+  content: '\002B';
+  color: #777;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+button.accordion.active:after {
+  content: "\2212";
+}
+
+div.panel {
+  padding: 8% 0%;
   background-color: var(--primary-bg-color);
   display: none;
   overflow: hidden;
-    background-color: #9e2929;
-    color: var(--main-text-color);
-    font-size: 1rem;
-
+  transition: max-height 0.2s ease-out;
+  color:#1e712d;
 }
 
+
   /* Media player styling */
+  /* Added a background colour to segregate the sections */
+
   .media-player {
     width: 100%;
     height: 1300px;
     background-color: #073522;
     padding: 5%;
   }
+
+  /* Text */
 
   h2 {
  font-weight: 600;
@@ -162,10 +168,14 @@ h4 {
  text-align: left;
 }
 
+  /* Video */
+
   .media-player video {
     max-width: 100%;
-    padding: 0% 8% 2% 8%;
+    padding: 0% 8% 0.8% 8%;
   }
+
+  /* Buttons */
   
   .custom-controls {
     display: flex;
@@ -181,28 +191,49 @@ h4 {
     background-color: var(--main-btn-bg-color);
     color: var(--main-text-color);
     border: none;
-    padding: 8px 12px;
+    height: 30px;
+    padding: 12px 18px;
     cursor: pointer;
-    font-size: 16px;
     display: flex;
     align-items: center;
+    opacity: 35%;
+    mix-blend-mode:luminosity;
   }
-  
+
+  .custom-controls button:hover {
+    background-color: var(--footer-text-color);
+    border: none;
+    height: 30px;
+    padding: 12px 18px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    mix-blend-mode: normal;
+    opacity: 100%;
+  }
+
+  /* Progress Bar */
+  /* The colours were made softer to blend in with the background */
+
   .progress-bar {
     width: 100%;
-    height: 10px;
-    background-color: rgb(62, 94, 71);
-    margin-top: 10px;
+    height: 30px;
+    background-color: var(--main-btn-bg-color);
     overflow: hidden;
+    opacity: 35%;
+    mix-blend-mode:luminosity;
   }
+  
   
   .progress-bar span {
     display: block;
     height: 100%;
-    background-color: var(--main-bg-color);
-    width: 0;
+    background-color: var(--footer-text-color);
+    width: auto;
     transition: width 0.3s ease;
   }
+
+  /* Album Gallery */
 
   .gallery {
   display: flex;
@@ -215,6 +246,7 @@ h4 {
     padding: 0.4%;
 
   }
+  
   /* Footer styling */
   footer {
     background-color: var(--main-bg-color);
@@ -229,5 +261,3 @@ h4 {
   footer a {
     color: var(--footer-text-color);
   }
-
-  
