@@ -114,6 +114,13 @@ nav a {
  font-size: 1.4rem;
 }
 
+nav a:hover {
+    font-weight: bolder;
+    text-decoration: underline;
+    color: #14582b;
+
+}
+
 .mood{
     scale: 0.69;
     margin-top: 1%;
@@ -122,3 +129,12 @@ nav a {
 
 /* Section Styling */
 
+.section{
+    margin-top: 30%;
+    text-align: center;
+}
+
+#logo{
+    display: flex;
+    justify-content: flex-start;
+}
