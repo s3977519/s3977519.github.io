@@ -188,4 +188,5 @@ p {
     font-weight: 300;
     font-family: 'nunito', sans-serif;
     color: var(--text-color);
+    width: 500px;
 }
