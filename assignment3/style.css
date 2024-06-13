@@ -109,7 +109,7 @@ nav{
     display: grid;
     grid-template-columns: repeat(9, 1fr);
     grid-template-rows: 1fr;
-    width:100%;
+    width:80%;
     height: 100%;
     padding: 0% 5% 1% 5%;
 }
@@ -160,7 +160,7 @@ nav a:hover {
     display: grid;
     grid-template-columns: repeat(9, 1fr);
     grid-template-rows: 1fr;
-    width:100%;
+    width:80%;
     height: 100%;
     padding: 0% 5% 1% 5%;
 }
@@ -173,14 +173,14 @@ nav a:hover {
 #arrow{
     grid-column: 6/7;
     grid-row: 1/2;
-    margin-right: 7%;
+    margin-right: 18%;
 }
 
 #hover-response {
     /* display: none; */
   grid-column: 7/10;
   grid-row: 1/2;
-  margin-left: 12%;
+  margin-left: 10%;
 }
 
 p {
