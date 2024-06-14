@@ -29,6 +29,17 @@ ul {
     padding: 10%;
 }
 
+button {
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    border: none;
+    cursor: pointer;
+}
+
+
 #grid-container{
     display: grid;
     grid-template-columns: repeat(6, 1fr);
@@ -190,4 +201,26 @@ p {
     font-family: 'nunito', sans-serif;
     color: var(--text-color);
     width: 500px;
+}
+
+
+/* Hover Reveal - GRID */
+/* sencha */
+
+.one-reveal {
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+}
+
+#sencha-reveal{
+  display:grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  width:100%;
+  height: 100%;
+  gap: 0px;
+  padding: 1.5% 5% 1% 5%;
 }
