@@ -91,7 +91,25 @@ function hideRevealGenmaicha() {
   genmaichaReveal.classList.remove("show");
 }
 
-// about us hover reveal
+// shop dropdown menu
+
+const dropDown = document.querySelector("#drop-down");
+console.log(dropDown);
+
+const shopContent = document.querySelector("#shop-content");
+console.log(shopContent);
+
+dropDown.addEventListener("mouseover", showContent);
+dropDown.addEventListener("mouseout", hideContent);
+
+function showContent() {
+    shopContent.classList.add("show");
+}
+
+function hideContent() {
+    shopContent.classList.remove("show")
+}
+// about reveal
 
 const about = document.querySelector("#about");
 console.log(about);
@@ -103,9 +121,9 @@ about.addEventListener("mouseover", showMoreInfo);
 about.addEventListener("mouseout", hideMoreInfo);
 
 function showMoreInfo() {
-  moreInfo.classList.add("show");
+    moreInfo.classList.add("show");
 }
 
 function hideMoreInfo() {
-  moreInfo.classList.remove("show");
+    moreInfo.classList.remove("show");
 }
