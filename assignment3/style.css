@@ -340,14 +340,13 @@ nav a:hover {
     margin-top: 12.5%;
 }
 
-#hover-response {
-    /* display: none; */
-  grid-column: 5/7;
-  grid-row: 1/2;
-  margin-left: 5%;
-  margin-top: 5%;
+.hover-response {
+     display: none;
+     grid-column: 5/7;
+     grid-row: 1/2;
+     margin-left: 5%;
+     margin-top: 5%;
 }
-
 p {
     font-weight: 400;
     font-family: 'nunito', sans-serif;
@@ -355,3 +354,6 @@ p {
     width: 500px;
 }
 
+#more-info.show {
+    display: grid;
+}

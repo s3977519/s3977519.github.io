@@ -90,3 +90,22 @@ function showRevealGenmaicha() {
 function hideRevealGenmaicha() {
   genmaichaReveal.classList.remove("show");
 }
+
+// about us hover reveal
+
+const about = document.querySelector("#about");
+console.log(about);
+
+const moreInfo = document.querySelector("#more-info");
+console.log(moreInfo);
+
+about.addEventListener("mouseover", showMoreInfo);
+about.addEventListener("mouseout", hideMoreInfo);
+
+function showMoreInfo() {
+  moreInfo.classList.add("show");
+}
+
+function hideMoreInfo() {
+  moreInfo.classList.remove("show");
+}
