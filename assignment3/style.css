@@ -79,15 +79,12 @@ cursor: pointer;
 .grid-container > * {
     grid-column: 1/7;
     grid-row: 1/3;
-    /* border: #14582b 4px solid; */
 }
 
 /* sencha hover reveal */
 .one-outer{
     grid-column: 1/2;
     grid-row: 1/2;
-    /* border: #14582b 2.5px solid;
-    border-radius: 20px 0px 0px 0px; */
 }
 .one {
     display: none;
@@ -110,8 +107,6 @@ cursor: pointer;
 .two-outer{
     grid-column: 1/2;
     grid-row: 2/3;
-    /* border: #14582b 2.5px solid;
-    border-radius: 0px 0px 0px 20px; */
     margin-top:-0.5%;
 }
 .two {
@@ -135,7 +130,6 @@ cursor: pointer;
 .three-outer{
     grid-column: 5/6;
     grid-row: 1/2;
-    /* border: #14582b 3.5px solid; */
 }
 
 .three{
@@ -159,8 +153,6 @@ cursor: pointer;
 .four-outer{
     grid-column: 6/7;
     grid-row: 1/2;
-    /* border: #14582b 2.5px solid;
-    border-radius: 0px 20px 0px 0px; */
 }
 
 .four{
@@ -184,9 +176,7 @@ cursor: pointer;
 .five-outer{
     grid-column: 5/7;
     grid-row: 2/3;
-    /* border: #14582b 2.5px solid; */
     margin-top: -0.3%;
-    /* border-radius: 0px 0px 20px 0px; */
 }
 
 .five{
@@ -221,7 +211,6 @@ cursor: pointer;
     grid-row: 2/3;
     border: #14582b 2.5px solid;
     border-radius: 0px 0px 0px 20px;
-    /* margin-top:0.1%; */
 }
 
 #display{
@@ -247,7 +236,6 @@ cursor: pointer;
     grid-column: 5/7;
     grid-row: 2/3;
     border: #14582b 2.5px solid;
-    /* margin-top: -0.3%; */
     border-radius: 0px 0px 20px 0px;
 }
 
@@ -262,7 +250,7 @@ nav{
 
 }
 
-#nav-container{
+.nav-container{
     position: fixed;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
@@ -321,7 +309,6 @@ nav a:hover {
   display: none;
   top: 100%; 
   z-index: 1;
-  /* transform: translate(-10%); */
 
 }
 
@@ -374,7 +361,9 @@ p{
 
 #more-info.show{
     display: grid;
+    animation-timing-function: ease;
 }
+
 
 /* navigation bar positioning */
 
@@ -385,6 +374,7 @@ p{
 #contact{
     margin-left: -30%%;
 }
+
 
 /* logo */
 
