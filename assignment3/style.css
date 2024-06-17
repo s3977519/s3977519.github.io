@@ -240,6 +240,19 @@ cursor: pointer;
     border-radius: 0px 0px 20px 0px;
 }
 
+/* The BIGGEST CHALLENGE */
+/* kind of an unresolved challenge at the moment */
+
+/* Unable to get the grid of the navigation to be equally responsive as the grid in the header section.
+This creates a jarring difference in the design outcome intended on different screensizes, it works well 
+on my laptop, but on a macbook or an ipad the design does not pull through. */
+
+/* How it actually looks like on my laptop: https://drive.google.com/file/d/1BRIRw9uLpKlgHtSBv3IFVDsSGG1VEVcm/view?usp=drive_link
+On a 14-inch macbook, window browser has to be set to 90% instead of 100% for navigation not to be cut off */
+
+/* SECOND CHALLENGE */
+/* The second row images left a small gap despite typing gap=0*/
+
 /* Navgation styling */
 
 
